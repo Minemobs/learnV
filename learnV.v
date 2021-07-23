@@ -75,9 +75,10 @@ struct Entity {
 
 fn maps() {
 	//can't use map because that's a type of variable
-	mut m := map[string]Entity{}
-	m["Player"] = Entity{20, 5}
-	m["Zombie"] = Entity{15, 3}
+	mut m := map{
+		"Player": Entity{20, 5}
+		"Zombie": Entity{15, 3}
+	}
 	println("Default player strength : ${m["Player"].strength}")
 	println("Default Zombie strength : ${m["Zombie"].strength}")
 }
