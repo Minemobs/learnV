@@ -9,6 +9,12 @@ fn main() {
 	println(mul(5, 2))
 	println(div(10, 2))
 	arrays()
+	player := Player{
+		name: "minemobs"
+		id: 630560
+		op: true
+	}
+	println("${player.name}'s id is ${player.id}. Is this player op ? ${player.op}")
 }
 
 fn add(x int, y int) int {
@@ -48,3 +54,9 @@ fn arrays() /*[]string*/ {
 	println("Fixed array $names")
 }
 
+struct Player {
+	name string
+	id int
+	op bool
+	//⚠️ WARNING ! You can't create functions in struct !
+}
