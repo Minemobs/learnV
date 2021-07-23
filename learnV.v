@@ -54,6 +54,9 @@ fn arrays() /*[]string*/ {
 	names << "Mr.Terraria"
 	println("Fixed array $names")
 	println("Is Jerome226 in this array ? ${'Jerome226' in names}")
+	nums := [1, 2, 3, 4, 5, 6]
+	even := nums.filter(it % 2 == 0)
+	println(even)
 }
 
 struct Player {
