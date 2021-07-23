@@ -51,6 +51,13 @@ struct Xyz {
 	foo string
 }
 
+enum OS {
+	gnulinux
+	windows
+	mac
+	alpine
+}
+
 //Old functions
 
 /*fn add(x int, y int) int {
