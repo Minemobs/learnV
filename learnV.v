@@ -35,6 +35,7 @@ fn main() {
 			println("Xyz: $x.foo")
 		}
 	}
+	loops()
 }
 
 fn input_reader() (string, string) {
@@ -56,6 +57,13 @@ enum OS {
 	windows
 	mac
 	alpine
+}
+
+fn loops() {
+	names := ["minemobs", "noalegeek", "unbreaking", "haribas"]
+	for i, name in names {
+		println("$i) $name")
+	}
 }
 
 //Old functions
