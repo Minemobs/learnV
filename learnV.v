@@ -51,7 +51,9 @@ fn arrays() /*[]string*/ {
 	println(names)
 	println(names[0])
 	names[1] = "NoaLeGeek68"
+	names << "Mr.Terraria"
 	println("Fixed array $names")
+	println("Is Jerome226 in this array ? ${'Jerome226' in names}")
 }
 
 struct Player {
