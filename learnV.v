@@ -15,6 +15,7 @@ fn main() {
 		op: true
 	}
 	println("${player.name}'s id is ${player.id}. Is this player op ? ${player.op}")
+	maps()
 }
 
 fn add(x int, y int) int {
@@ -65,4 +66,18 @@ struct Player {
 	id int
 	op bool
 	//⚠️ WARNING ! You can't create functions in struct !
+}
+
+struct Entity {
+	strength int
+	health int
+}
+
+fn maps() {
+	//can't use map because that's a type of variable
+	mut m := map[string]Entity{}
+	m["Player"] = Entity{20, 5}
+	m["Zombie"] = Entity{15, 3}
+	println("Default player strength : ${m["Player"].strength}")
+	println("Default Zombie strength : ${m["Zombie"].strength}")
 }
