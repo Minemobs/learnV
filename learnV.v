@@ -53,10 +53,8 @@ struct Xyz {
 }
 
 enum OS {
-	gnulinux
 	windows
-	mac
-	alpine
+	darwin //macos
 }
 
 fn loops() {
@@ -64,6 +62,20 @@ fn loops() {
 	for i, name in names {
 		println("$i) $name")
 	}
+	m := map{
+		names[0]: names[1]
+		names[2]: names[3]
+	}
+	mut iter := 0
+	for key, val in m {
+		iter++
+		println("Team $iter : $key and $val")
+	}
+	print('|')
+	for i in 0..5 {
+		print(" $i |")
+	}
+	println("")
 }
 
 //Old functions
