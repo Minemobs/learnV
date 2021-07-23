@@ -1,7 +1,7 @@
 module main
 
 fn main() {
-	mut h, w := hw()
+	/*mut h, w := hw()
 	println('$h $w')
 	test_string()
 	println(add(10, 5))
@@ -15,10 +15,10 @@ fn main() {
 		op: true
 	}
 	println("${player.name}'s id is ${player.id}. Is this player op ? ${player.op}")
-	maps()
+	maps()*/
 }
 
-fn add(x int, y int) int {
+/*fn add(x int, y int) int {
 	return x + y
 }
 
@@ -47,7 +47,8 @@ fn test_string() {
 	println("String to Integer : ${nmbr.int()}")
 }
 
-fn arrays() /*[]string*/ {
+fn arrays() //[]string 
+{
 	mut names := ["minemobs", "noalegee68", "unbreakingslime"]
 	println(names)
 	println(names[0])
@@ -81,4 +82,4 @@ fn maps() {
 	}
 	println("Default player strength : ${m["Player"].strength}")
 	println("Default Zombie strength : ${m["Zombie"].strength}")
-}
+}*/
