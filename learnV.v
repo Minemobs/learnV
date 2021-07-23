@@ -1,4 +1,6 @@
 module main
+//Selective import
+import os { input, user_os }
 
 fn main() {
 	/*mut h, w := hw()
@@ -16,7 +18,40 @@ fn main() {
 	}
 	println("${player.name}'s id is ${player.id}. Is this player op ? ${player.op}")
 	maps()*/
+	username, os := input_reader()
+	println("Hello $username !")
+	println("You are using ${os}.")
+	x := Alphabet(Abc{"Bonsoir"})
+	/*if x is Xyz {
+		println(x.foo)
+	} else {
+		println("Not Xyz")
+	}*/
+	match x {
+		Abc {
+			println("Abc: $x.val")
+		}
+		Xyz {
+			println("Xyz: $x.foo")
+		}
+	}
 }
+
+fn input_reader() (string, string) {
+	return os.input("Please enter your name ! \n"), user_os()
+}
+
+type Alphabet = Abc | Xyz
+
+struct Abc {
+	val string
+}
+
+struct Xyz {
+	foo string
+}
+
+//Old functions
 
 /*fn add(x int, y int) int {
 	return x + y
