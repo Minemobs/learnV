@@ -1,7 +1,8 @@
 module main
 
 fn main() {
-	println('Hello World!')
+	h, w := hw()
+	println('$h $w')
 	println(add(10, 5))
 	println(sub(10, 5))
 	println(mul(5, 2))
@@ -22,4 +23,8 @@ fn mul(x int, y int) int {
 
 fn div(x int, y int) int {
 	return x / y
+}
+
+fn hw() (string, string) {
+	return "Hello", "World"
 }
